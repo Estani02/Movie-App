@@ -1,0 +1,43 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    background-color: #24242d ;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.subcontenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.subcontenedor div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    min-width: 550px;
+}
+
+.link{
+    text-decoration: none;
+    color: rgba(223, 250, 249, 0.978);
+    font-size: 2.2vh;
+    font-weight: bolder;
+    padding: 1.1vh;
+    border-radius: 14% / 44%;
+    background-color: rgba(211, 219, 219, 0.079), 0%;
+    transition: background-color 0.4s;
+}
+
+.link:hover{
+    background-color: rgba(211, 219, 219, 0.079);
+}

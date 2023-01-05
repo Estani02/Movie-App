@@ -1,0 +1,23 @@
+
+
+.seeker{
+    outline: none;
+    border-radius: 18px/ 15px;
+    padding: 1.5vh;
+    padding-left: 2.5vh;
+    height: 1.8vh;
+    width: 25vh;
+    border: none;
+    transition: width 0.5s;
+    background: rgb(77, 75, 86) ;
+    color: rgba(229, 233, 236, 0.767);
+    font-size: 2.0vh;
+}
+
+::placeholder{
+    color: rgba(229, 233, 236, 0.767);
+}
+
+.seeker:focus{
+    width: 30vh;
+}
