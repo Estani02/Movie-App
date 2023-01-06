@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getPopularMovie } from "../../Redux/actios";
-import MoviesWanted from "../movies-wanted/movies-wanted";
+import FoundMovie from "../found-movie/found-movie"
 import s from './home.module.css'
 
 
@@ -37,7 +37,7 @@ export default function Home(){
             </dd>
         </dl>
         ) : (
-            <MoviesWanted />
+            <FoundMovie />
         )
         }
         </>

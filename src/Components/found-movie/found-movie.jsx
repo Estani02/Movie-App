@@ -3,14 +3,14 @@ import s from '../movie/home.module.css'
 import { Link } from "react-router-dom";
 
 
-export default function MoviesWanted(){
+export default function FoundMovie(){
 
     const moviesFound = useSelector(state => state.movieLoaded)
 
     return(
         <>
         <dl className={s.contenedorPrincipal}>
-            <dt className={s.tituloContenedorP}>MOVIE WANTED</dt>
+            <dt className={s.tituloContenedorP}>FOUND MOVIE</dt>
             <dd className={s.contenedorMovies}>
             {moviesFound?.map((m)=>
                 <div key={m.id} className={s.subcontenedorMovies}>
