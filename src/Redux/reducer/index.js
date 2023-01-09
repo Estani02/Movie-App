@@ -52,7 +52,7 @@ const rootReducer = (state = initialState, {type, payload}) => {
         case REMOVE_MOVIE_FAV: 
             return{
                 ...state,
-                movieFav:payload
+                movieFav: payload
             }
             default:
                 return {...state}

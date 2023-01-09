@@ -9,14 +9,13 @@ export default function Search(){
     const dispatch = useDispatch();
 
     function handleChange(e){
-        setTitle(e.target.value.replaceAll(" ", "+"))
+        setTitle(e.target.value)//.replaceAll(" ", "+")) 
     }
 
     function handleSubmit(e){
         e.preventDefault();
         dispatch(getMovie(title))
-        
-        setTitle('')
+        setTitle('')   
     }
 
     return(
