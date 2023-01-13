@@ -1,12 +1,14 @@
-import { useState } from "react"
-import { useDispatch } from "react-redux"
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { getMovie } from "../../Redux/actios";
-import s from './search.module.css'
+import s from './search.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Search(){
 
     const[title, setTitle] = useState('');
     const dispatch = useDispatch();
+    let navigate = useNavigate()
 
     function handleChange(e){
         setTitle(e.target.value)//.replaceAll(" ", "+")) 
@@ -16,6 +18,7 @@ export default function Search(){
         e.preventDefault();
         dispatch(getMovie(title))
         setTitle('')   
+        navigate('/')
     }
 
     return(
