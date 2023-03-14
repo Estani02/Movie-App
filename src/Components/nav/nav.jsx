@@ -15,7 +15,7 @@ export default function Nav(){
                     <div>
                         <Search />
                         <li><NavLink to='/fav' className={s.link}>FAVORITE MOVIES</NavLink></li>
-                        <li><NavLink to='/about' className={s.link}>ABOUT ME</NavLink></li>
+                        <li><NavLink to='/about' className={s.link}>ABOUT</NavLink></li>
                     </div>
                 </ul>
         </nav>
