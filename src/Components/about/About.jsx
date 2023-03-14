@@ -13,27 +13,27 @@ export default function About() {
   return (
     <div className={s.container}>
       <h1>MOVIE-APP</h1>
-    <div className={s.subcontainer}>
-          <img src={movie} alt="iconMovie" />
+      <div className={s.subcontainer}>
+        <img src={movie} alt="iconMovie" />
         <div>
           <p className={s.text}>
-            Este proyecto me sirvio para afianzar conceptos de <b>React</b> y
-            poner en parctica <b>Redux</b>. Esta página dentor de todo es
+            Este proyecto me sirvió para afianzar conceptos de <b>React</b> y
+            poner en practica <b>Redux</b>. Esta página dentro de todo es
             sencilla. Alguna de sus funcionalidades son:
           </p>
           <ul>
-            <li>Ver cuales son las peliculas del momento</li>
-            <li>Buscar cualquier pelicual/serie</li>
-            <li>Ver el detalles de la pelicula/serie incluyendo su trailer</li>
+            <li>Ver cuáles son las películas del momento</li>
+            <li>Buscar cualquier película/serie</li>
+            <li>Ver el detalle de la película/serie incluyendo su tráiler</li>
             <li>Agregar o quitar de favoritos</li>
           </ul>
           <p className={s.text}>
-            Se implemento librerias nuevas como la de <b>react-youtube</b> y{" "}
-            <b>react-spinners</b>, que simplificaron la escritura del codigo.
+            Se implementó librerías nuevas como la de <b>react-youtube</b> y
+            <b>react-spinners</b>, que simplificaron la escritura del código.
           </p>
           <p className={s.text}>
-            Te invito que veas mi repositorio y me digas que te parecio, tambien
-            dejo mi linkedin donde cuento mis avances y mis proximos proyectos
+            Te invito que veas mi repositorio y me digas que te pareció, también
+            dejo mi LinkedIn donde cuento mis avances y mis próximos proyectos.
           </p>
           <div className={s.containerIcons}>
             <a
@@ -50,9 +50,9 @@ export default function About() {
             >
               <img src={linkedin} alt="Linkedink" className={s.iconLinkedin} />
             </a>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
