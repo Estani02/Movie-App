@@ -1,0 +1,45 @@
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subcontainer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text{
+    width: 600px;
+}
+
+.containerIcons{
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: solid 1px red; */
+}
+
+.iconGitHub{
+    height: 33px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+}
+
+.iconLinkedin{
+    height: 28px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+}
+
+.iconGitHub:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.iconLinkedin:hover{
+    transform: scale(1.1, 1.1);
+}
+
