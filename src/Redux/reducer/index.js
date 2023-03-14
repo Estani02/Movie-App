@@ -27,7 +27,7 @@ const rootReducer = (state = initialState, {type, payload}) => {
         case GET_MOVIES:
             return{
                 ...state,
-                movieLoaded: payload.results,
+                movieLoaded: payload.results.filter(movie => movie.poster_path !== null ),
             }
         case GET_MOVIES_DETAIL:
             return{
